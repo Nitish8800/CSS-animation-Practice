@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    padding: 10px;
+    margin: 100px;
+    border: 2px solid black;
+
+    /* transform: translateX(100px); */
+
+    transform: rotate(180deg);
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background: red;
+    padding: 10px;
+    margin: 100px;
+    border: 2px solid black;
+    border-radius: 100px;
+  animation: circle-animation 1s linear infinite 5s;
+
+}
+
+
+@keyframes circle-animation{
+from{
+    border-radius: 0px;
+}
+to{
+    border-radius: 100px;
+}
+
+
+}
+
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-top: 2px solid white;
+    animation: spinner-animation 1s linear infinite;
+    /* background: violet; */
+
+}
+
+@keyframes spinner-animation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.container{
+    margin: 100px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot{
+   width: 50px;
+   height: 50px;
+   background: grey;
+   border-radius: 50%;
+
+
+}
+
+.one{
+    animation: loading 2s linear infinite 0.4s;
+}
+
+.two{
+    animation: loading 2s linear infinite 0.8s;
+}
+
+.three{
+    animation: loading 2s linear infinite 1.2s;
+}
+
+.four{
+    animation: loading 2s linear infinite 1.6s;
+}
+
+.five{
+    animation: loading 2s linear infinite 2s;
+}
+
+
+@keyframes loading {
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+<div class="box">a</div>
+<div class="circle">b</div>
+
+<div class="spinner"></div>
+
+
+<div class="container">
+    <div class="dot one"></div>
+    <div class="dot two"></div>
+    <div class="dot three"></div>
+    <div class="dot four"></div>
+    <div class="dot five"></div>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

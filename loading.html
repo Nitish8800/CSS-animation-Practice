@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+.row{
+    margin: 100px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot{
+   width: 50px;
+   height: 50px;
+   background: grey;
+   border-radius: 50%;
+
+
+}
+
+
+
+.one{
+    animation: loading 2s linear infinite 0.4s;
+}
+
+.two{
+    animation: loading 2s linear infinite 1s;
+}
+
+.three{
+    animation: loading 2s linear infinite 1s;
+}
+
+.four{
+    animation: loading 2s linear infinite 1s;
+}
+
+.five{
+    animation: loading 2s linear infinite 2s;
+}
+
+
+@keyframes loading {
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+    <div class="row">
+        <div class="dot five"></div>
+        <div class="dot four"></div>
+        <div class="dot three"></div>
+        <div class="dot two"></div>
+        <div class="dot one"></div>
+</div>
+
+<div class="row">
+    <div class="dot"></div>
+    <div class="dot two"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+<div class="row">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot three"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+<div class="row">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot four"></div>
+    <div class="dot"></div>
+</div>
+
+
+<div class="row">
+    <div class="dot one"></div>
+    <div class="dot two"></div>
+    <div class="dot three"></div>
+    <div class="dot four"></div>
+    <div class="dot five"></div>
+</div>
+</body>
+</html>

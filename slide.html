@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: olive;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.slide-in-left{
+animation: slide-in 3s linear infinite;
+}
+
+@keyframes slide-in {
+    
+    from{
+        transform: translateX(-1000px) rotate(-1800deg);
+    }
+
+    30%{
+        transform: translateX(80px)
+        rotate(270deg);
+    }
+
+    to{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+.appear{
+    animation: appear-animation 5s linear 3s forwards;
+}
+
+
+@keyframes appear-animation {
+    
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+
+}
+
+</style>
+
+
+</head>
+<body>
+    
+<div class="ball"></div>
+
+<hr/>
+
+<div class="ball slide-in-left">
+a
+</div>
+
+<hr/>
+
+<div class="ball slide-in-left">
+a
+    <div class="appear">b</div>
+
+</div>
+
+</body>
+</html>
